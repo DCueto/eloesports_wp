@@ -1,0 +1,1013 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flex Mag 1.12\n"
+"POT-Creation-Date: 2016-10-27 23:55-0400\n"
+"PO-Revision-Date: 2016-10-27 23:55-0400\n"
+"Last-Translator: \n"
+"Language-Team: mvpthemes@gmail.com\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;_n;__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:7
+msgid "Error"
+msgstr ""
+
+#: 404.php:8
+msgid "The page you requested does not exist or has moved."
+msgstr ""
+
+#: admin/theme-settings.php:72
+msgid "General"
+msgstr ""
+
+#: admin/theme-settings.php:76
+msgid "Theme Skin"
+msgstr ""
+
+#: admin/theme-settings.php:77
+msgid ""
+"Select your theme skin. If you want to change the colors and fonts manually, "
+"please select Custom."
+msgstr ""
+
+#: admin/theme-settings.php:85
+msgid "Fly-Out Menu Skin"
+msgstr ""
+
+#: admin/theme-settings.php:86
+msgid "Choose between a light and dark skin for the Fly-Out menu."
+msgstr ""
+
+#: admin/theme-settings.php:94
+msgid "Logo Location"
+msgstr ""
+
+#: admin/theme-settings.php:95
+msgid "Set the location of your logo."
+msgstr ""
+
+#: admin/theme-settings.php:102
+msgid "Logo"
+msgstr ""
+
+#: admin/theme-settings.php:103
+msgid ""
+"Select a file to appear as your logo that will appear in the floating "
+"navigation bar and will replace the default \"Flex Mag\" logo."
+msgstr ""
+
+#: admin/theme-settings.php:108
+msgid "Logo in Navigation"
+msgstr ""
+
+#: admin/theme-settings.php:109
+msgid ""
+"If you are displaying your logo above the navigation, you can upload a "
+"separate logo that will appear in the floating navigation bar as you scroll "
+"down the page on desktop computers. It will also appear on mobile and tablet "
+"devices."
+msgstr ""
+
+#: admin/theme-settings.php:114
+msgid "Custom Favicon"
+msgstr ""
+
+#: admin/theme-settings.php:115
+msgid ""
+"Upload a 16x16px PNG/GIF image that will represent your website's favicon."
+msgstr ""
+
+#: admin/theme-settings.php:120
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/theme-settings.php:126
+msgid "Toggle Responsiveness"
+msgstr ""
+
+#: admin/theme-settings.php:132
+msgid "Toggle Infinite Scroll"
+msgstr ""
+
+#: admin/theme-settings.php:140
+msgid "Colors"
+msgstr ""
+
+#: admin/theme-settings.php:143
+msgid "Primary Theme Color"
+msgstr ""
+
+#: admin/theme-settings.php:144
+msgid "Primary color for the site."
+msgstr ""
+
+#: admin/theme-settings.php:149
+msgid "Top Navigation Background Color"
+msgstr ""
+
+#: admin/theme-settings.php:150
+msgid "The background color of the top navigation."
+msgstr ""
+
+#: admin/theme-settings.php:155
+msgid "Top Navigation Text Color"
+msgstr ""
+
+#: admin/theme-settings.php:156
+msgid "The text color of the top navigation."
+msgstr ""
+
+#: admin/theme-settings.php:161
+msgid "Top Navigation Text Hover Color"
+msgstr ""
+
+#: admin/theme-settings.php:162
+msgid "The text color when you mouse over the top navigation."
+msgstr ""
+
+#: admin/theme-settings.php:167
+msgid "Fly-Out Button Background Color"
+msgstr ""
+
+#: admin/theme-settings.php:168
+msgid "The background color of the Fly-Out Menu Button."
+msgstr ""
+
+#: admin/theme-settings.php:173
+msgid "Fly-Out Button Lines Color"
+msgstr ""
+
+#: admin/theme-settings.php:174
+msgid "The background color of the Fly-Out Menu Button Lines."
+msgstr ""
+
+#: admin/theme-settings.php:179
+msgid "Main Headlines Link Color"
+msgstr ""
+
+#: admin/theme-settings.php:180
+msgid "The text color of the headline links."
+msgstr ""
+
+#: admin/theme-settings.php:185
+msgid "Main Headlines Link Hover Color"
+msgstr ""
+
+#: admin/theme-settings.php:186
+msgid "The text color when you mouse over the headline links."
+msgstr ""
+
+#: admin/theme-settings.php:191
+msgid "Primary Link Color"
+msgstr ""
+
+#: admin/theme-settings.php:192
+msgid "Primary link color for the site."
+msgstr ""
+
+#: admin/theme-settings.php:197
+msgid "Link Hover Color"
+msgstr ""
+
+#: admin/theme-settings.php:198
+msgid "Link hover color for the site."
+msgstr ""
+
+#: admin/theme-settings.php:204
+msgid "Fonts"
+msgstr ""
+
+#: admin/theme-settings.php:207
+msgid "General Content Font"
+msgstr ""
+
+#: admin/theme-settings.php:208
+msgid "Enter the font name for the general font for the content on all pages."
+msgstr ""
+
+#: admin/theme-settings.php:213
+msgid "Fly-Out Menu/Top Navigation Font"
+msgstr ""
+
+#: admin/theme-settings.php:219
+msgid "Featured Posts/Article Headline Font"
+msgstr ""
+
+#: admin/theme-settings.php:225
+msgid "General Headline Font"
+msgstr ""
+
+#: admin/theme-settings.php:231
+msgid "General Heading Font"
+msgstr ""
+
+#: admin/theme-settings.php:239
+msgid "Homepage Settings"
+msgstr ""
+
+#: admin/theme-settings.php:242 admin/theme-settings.php:466
+#: admin/theme-settings.php:734
+msgid "Attention"
+msgstr ""
+
+#: admin/theme-settings.php:249 admin/theme-settings.php:479
+msgid "Featured Posts Layout"
+msgstr ""
+
+#: admin/theme-settings.php:250
+msgid "Select the layout of your Featured Posts section on the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:257
+msgid "Show Featured Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:263
+msgid "Featured Posts Tag Slug"
+msgstr ""
+
+#: admin/theme-settings.php:264
+msgid ""
+"Enter the Tag Slug of the Tag you want associated with the Featured Posts "
+"section. Posts with this Tag will be displayed in the Featured Slider at the "
+"top of the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:269
+msgid "Featured Heading"
+msgstr ""
+
+#: admin/theme-settings.php:276
+msgid "Homepage Body Layout"
+msgstr ""
+
+#: admin/theme-settings.php:277
+msgid ""
+"Select your layout for the body of the homepage that will appear in the "
+"middle column of the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:284
+msgid "Show Homepage Left Sidebar?"
+msgstr ""
+
+#: admin/theme-settings.php:291
+msgid "Homepage Left Sidebar Layout"
+msgstr ""
+
+#: admin/theme-settings.php:292
+msgid "Select your layout for the left sidebar on the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:300
+msgid "Homepage Right Sidebar Layout"
+msgstr ""
+
+#: admin/theme-settings.php:301
+msgid "Select your layout for the right sidebar on the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:308
+msgid "Number of posts per page"
+msgstr ""
+
+#: admin/theme-settings.php:316
+msgid "Latest News Settings"
+msgstr ""
+
+#: admin/theme-settings.php:319
+msgid "Latest News Heading"
+msgstr ""
+
+#: admin/theme-settings.php:325
+msgid "Maximum Number of Latest News Stories"
+msgstr ""
+
+#: admin/theme-settings.php:332
+msgid "Latest News Position"
+msgstr ""
+
+#: admin/theme-settings.php:333
+msgid ""
+"Select whether to display the Latest News sidebar on the left or the right "
+"of the main section of the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:341
+msgid "More Latest News Page"
+msgstr ""
+
+#: admin/theme-settings.php:342
+msgid ""
+"Select the page for your Latest News Template. Refer to the documentation "
+"for more information on how to set up custom Page templates."
+msgstr ""
+
+#: admin/theme-settings.php:349
+msgid "Latest News Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:357
+msgid "Popular Posts Settings"
+msgstr ""
+
+#: admin/theme-settings.php:360
+msgid "Popular Posts Heading"
+msgstr ""
+
+#: admin/theme-settings.php:366
+msgid "Number of Popular Posts"
+msgstr ""
+
+#: admin/theme-settings.php:372
+msgid "Popular Posts Days"
+msgstr ""
+
+#: admin/theme-settings.php:378
+msgid "Popular Posts Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:386
+msgid "Article Settings"
+msgstr ""
+
+#: admin/theme-settings.php:390
+msgid "Default Post Template"
+msgstr ""
+
+#: admin/theme-settings.php:391
+msgid "Select the default Post Template layout for your articles."
+msgstr ""
+
+#: admin/theme-settings.php:398
+msgid "Show Featured Image In Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:399
+msgid ""
+"Uncheck this box if you would like to remove the featured image thumbnail "
+"from all posts."
+msgstr ""
+
+#: admin/theme-settings.php:404
+msgid "Show Social Sharing Buttons?"
+msgstr ""
+
+#: admin/theme-settings.php:410
+msgid "Show Author Info?"
+msgstr ""
+
+#: admin/theme-settings.php:416
+msgid "Show Author Email?"
+msgstr ""
+
+#: admin/theme-settings.php:422
+msgid "Show Related Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:428
+msgid "Auto Load Previous Post?"
+msgstr ""
+
+#: admin/theme-settings.php:434
+msgid "Show Previous/Next Post Links?"
+msgstr ""
+
+#: admin/theme-settings.php:441
+msgid "Article Sidebar Layout"
+msgstr ""
+
+#: admin/theme-settings.php:442
+msgid "Select your layout for the sidebar on article pages."
+msgstr ""
+
+#: admin/theme-settings.php:449
+msgid "Disqus Forum Shortname"
+msgstr ""
+
+#: admin/theme-settings.php:455
+msgid "Article Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:463
+msgid "Category Pages"
+msgstr ""
+
+#: admin/theme-settings.php:472
+msgid "Show Featured Posts"
+msgstr ""
+
+#: admin/theme-settings.php:480
+msgid "Select the layout of your Featured Posts section on the category pages."
+msgstr ""
+
+#: admin/theme-settings.php:488
+msgid "Category/Archive Body Layout"
+msgstr ""
+
+#: admin/theme-settings.php:489
+msgid "Select your layout for the body of your category and archive pages."
+msgstr ""
+
+#: admin/theme-settings.php:500
+msgid "Scoreboard Settings"
+msgstr ""
+
+#: admin/theme-settings.php:503
+msgid "Show Scoreboard?"
+msgstr ""
+
+#: admin/theme-settings.php:504
+msgid "Uncheck this box if you would like to remove the scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:510
+msgid "Scoreboard Skin"
+msgstr ""
+
+#: admin/theme-settings.php:511
+msgid "Choose between a light and dark skin for the scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:518
+msgid "Name of Category 1"
+msgstr ""
+
+#: admin/theme-settings.php:525
+msgid "Select Category 1"
+msgstr ""
+
+#: admin/theme-settings.php:526
+msgid "Select the 1st category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:533
+msgid "Name of Category 2"
+msgstr ""
+
+#: admin/theme-settings.php:540
+msgid "Select Category 2"
+msgstr ""
+
+#: admin/theme-settings.php:541
+msgid "Select the 2nd category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:548
+msgid "Name of Category 3"
+msgstr ""
+
+#: admin/theme-settings.php:555
+msgid "Select Category 3"
+msgstr ""
+
+#: admin/theme-settings.php:556
+msgid "Select the 3rd category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:563
+msgid "Name of Category 4"
+msgstr ""
+
+#: admin/theme-settings.php:570
+msgid "Select Category 4"
+msgstr ""
+
+#: admin/theme-settings.php:571
+msgid "Select the 4th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:578
+msgid "Name of Category 5"
+msgstr ""
+
+#: admin/theme-settings.php:585
+msgid "Select Category 5"
+msgstr ""
+
+#: admin/theme-settings.php:586
+msgid "Select the 5th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:593
+msgid "Name of Category 6"
+msgstr ""
+
+#: admin/theme-settings.php:600
+msgid "Select Category 6"
+msgstr ""
+
+#: admin/theme-settings.php:601
+msgid "Select the 6th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:608
+msgid "Name of Category 7"
+msgstr ""
+
+#: admin/theme-settings.php:615
+msgid "Select Category 7"
+msgstr ""
+
+#: admin/theme-settings.php:616
+msgid "Select the 7th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:623
+msgid "Name of Category 8"
+msgstr ""
+
+#: admin/theme-settings.php:630
+msgid "Select Category 8"
+msgstr ""
+
+#: admin/theme-settings.php:631
+msgid "Select the 8th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:638
+msgid "Name of Category 9"
+msgstr ""
+
+#: admin/theme-settings.php:645
+msgid "Select Category 9"
+msgstr ""
+
+#: admin/theme-settings.php:646
+msgid "Select the 9th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:653
+msgid "Name of Category 10"
+msgstr ""
+
+#: admin/theme-settings.php:660
+msgid "Select Category 10"
+msgstr ""
+
+#: admin/theme-settings.php:661
+msgid "Select the 10th category for your scoreboard."
+msgstr ""
+
+#: admin/theme-settings.php:672
+msgid "Social Media"
+msgstr ""
+
+#: admin/theme-settings.php:675
+msgid "Facebook"
+msgstr ""
+
+#: admin/theme-settings.php:681
+msgid "Twitter"
+msgstr ""
+
+#: admin/theme-settings.php:687
+msgid "Pinterest"
+msgstr ""
+
+#: admin/theme-settings.php:693
+msgid "Instagram"
+msgstr ""
+
+#: admin/theme-settings.php:699
+msgid "Google Plus"
+msgstr ""
+
+#: admin/theme-settings.php:705
+msgid "Youtube"
+msgstr ""
+
+#: admin/theme-settings.php:711
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: admin/theme-settings.php:717
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: admin/theme-settings.php:723
+msgid "Custom RSS Link"
+msgstr "Enlace Personalizado RSS"
+
+#: admin/theme-settings.php:731
+msgid "Ad Management"
+msgstr "Anuncios"
+
+#: admin/theme-settings.php:741
+msgid "Leaderboard Location"
+msgstr "Ubicación del Leaderboard"
+
+#: admin/theme-settings.php:742
+msgid "Set the location of your leaderboard."
+msgstr ""
+
+#: admin/theme-settings.php:749
+msgid "Header Leaderboard Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:755
+msgid "Responsive Ad Area Below Article"
+msgstr ""
+
+#: admin/theme-settings.php:761
+msgid "Footer Leaderboard Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:767
+msgid "Wallpaper Ad Image URL"
+msgstr ""
+
+#: admin/theme-settings.php:773
+msgid "Wallpaper Ad Click-Through URL"
+msgstr ""
+
+#: admin/theme-settings.php:781
+msgid "Footer Info"
+msgstr ""
+
+#: admin/theme-settings.php:784
+msgid "Show Footer Info Box?"
+msgstr ""
+
+#: admin/theme-settings.php:790
+msgid "Footer Logo"
+msgstr ""
+
+#: admin/theme-settings.php:791
+msgid "Select a file to appear as the logo in the Footer Info Box."
+msgstr ""
+
+#: admin/theme-settings.php:796
+msgid "Footer Info Text"
+msgstr ""
+
+#: admin/theme-settings.php:802
+msgid "Copyright Text"
+msgstr ""
+
+#: archive.php:9
+msgid "Todos los posts taggeados"
+msgstr ""
+
+#: archive.php:63 author.php:118 category.php:334 index.php:62
+#: page-home.php:359 page-latest.php:68 page-videos.php:90 search.php:68
+msgid "Más Posts"
+msgstr ""
+
+#: attachment.php:17 attachment.php:19 content-partial.php:114
+#: content-partial.php:116 content-partial.php:117 content-partial.php:155
+#: content-partial.php:157 content-partial.php:158 page-videos.php:26
+#: page-videos.php:28 single.php:183 single.php:185 single.php:186
+#: single.php:248 single.php:250 single.php:251
+msgid "Compartir"
+msgstr ""
+
+#: attachment.php:18 content-partial.php:115 content-partial.php:156
+#: page-videos.php:27 single.php:184 single.php:249
+msgid "Tweet"
+msgstr ""
+
+#: author.php:63
+msgid "Posts Por"
+msgstr ""
+
+#: comments-popup.php:40 comments.php:19 content-partial.php:175
+#: page-fullwidth.php:34 page.php:33 single.php:273
+msgid "1 Comentario"
+msgstr ""
+
+#: comments-popup.php:60
+#, php-format
+msgid "%1$s &#8212; %2$s"
+msgstr ""
+
+#: comments-popup.php:69
+msgid "No hay comentarios todavía."
+msgstr ""
+
+#: comments-popup.php:74
+msgid "Deja un comentario"
+msgstr ""
+
+#: comments-popup.php:78
+#, php-format
+msgid ""
+"Logueado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Cierra "
+"sesión de esta cuenta\">Cierra sesión &raquo;</a>"
+msgstr ""
+
+#: comments-popup.php:82
+msgid "Nombre"
+msgstr ""
+
+#: comments-popup.php:87
+msgid "E-mail"
+msgstr ""
+
+#: comments-popup.php:92
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr ""
+
+#: comments-popup.php:97
+msgid "Tu comentario"
+msgstr ""
+
+#: comments-popup.php:105
+msgid "Comentario del Post"
+msgstr ""
+
+#: comments-popup.php:114
+msgid "Lo sentimos, el formulario del comentario está cerrado en este momento."
+msgstr ""
+
+#: comments-popup.php:121
+msgid "Cierra esta ventana."
+msgstr ""
+
+#: comments-popup.php:127
+msgid "Lo sentimos, no se han encontrado posts con estos criterios."
+msgstr ""
+
+#: comments.php:4
+msgid ""
+"Este post está protegido con contraseña. Introduce la contraseña para ver "
+"los comentarios."
+msgstr ""
+
+#: comments.php:25 comments.php:36
+msgid "&larr; Comentarios más viejos"
+msgstr ""
+
+#: comments.php:26 comments.php:37
+msgid "Nuevos comentarios &rarr;"
+msgstr ""
+
+#: comments.php:51
+msgid "Debes estar logueado para publicar un comentario"
+msgstr ""
+
+#: comments.php:53
+msgid "Login"
+msgstr ""
+
+#: comments.php:62 comments.php:63
+msgid "Deja una respuesta"
+msgstr ""
+
+#: content-partial.php:19 content-partial.php:75 single.php:24 single.php:100
+#: single.php:168
+msgid "Por"
+msgstr ""
+
+#: content-partial.php:22 content-partial.php:78 single.php:27 single.php:103
+#: single.php:171
+msgid "Publicado en"
+msgstr ""
+
+#: content-partial.php:114 content-partial.php:155 single.php:183
+#: single.php:248
+msgid "Comparte en Facebook"
+msgstr ""
+
+#: content-partial.php:115 content-partial.php:156 single.php:184
+#: single.php:249
+msgid "Twitea esta publicación"
+msgstr ""
+
+#: content-partial.php:117 content-partial.php:158 single.php:186
+#: single.php:251
+msgid "Pinguea esta publicación"
+msgstr ""
+
+#: content-partial.php:118 content-partial.php:159 page-videos.php:29
+#: single.php:187 single.php:252
+msgid ""
+"He encontrado este articulo interesante y he pensado en compartirlo contigo. "
+"Revísalo: "
+msgstr ""
+
+#: content-partial.php:118 content-partial.php:159 page-videos.php:29
+#: single.php:187 single.php:252
+msgid "Email"
+msgstr ""
+
+#: content-partial.php:150 single.php:243
+msgid "Articulos relacionados:"
+msgstr ""
+
+#: content-partial.php:169 single.php:194 single.php:267
+msgid "Comentarios"
+msgstr ""
+
+#: content-partial.php:175 page-fullwidth.php:28 page-fullwidth.php:34
+#: page.php:27 page.php:33 single.php:273
+msgid "Clickea para comentar"
+msgstr ""
+
+#: content-partial.php:175 page-fullwidth.php:34 page.php:33 single.php:273
+msgid "% Comentarios"
+msgstr ""
+
+#: footer.php:108
+msgid "Para el Top"
+msgstr ""
+
+#: functions.php:418
+msgid "Menú Principal"
+msgstr ""
+
+#: functions.php:419
+msgid "Fly-Out Menu"
+msgstr ""
+
+#: functions.php:420
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:596
+msgid "Añade un titulo destacado que se mostrará en el slider de destacados."
+msgstr ""
+
+#: functions.php:611
+msgid "Introduce tu video o audio incrustado."
+msgstr ""
+
+#: functions.php:626
+msgid "Añade un subtitulo y/o información de la foto para la imagen destacada."
+msgstr ""
+
+#: functions.php:641
+msgid "Selecciona una plantilla para tu post."
+msgstr ""
+
+#: functions.php:697
+msgid ""
+"Selecciona para enseñar o esconder la imagen destacada para que se vea "
+"automaticamente en este post."
+msgstr ""
+
+#: functions.php:910
+#, php-format
+msgid "%s "
+msgstr ""
+
+#: functions.php:913
+msgid "a"
+msgstr ""
+
+#: functions.php:914 functions.php:935
+msgid "Editar"
+msgstr ""
+
+#: functions.php:919
+msgid "Tu comentario está esperando a ser moderado."
+msgstr ""
+
+#: functions.php:935
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:991
+msgid "Recomendado para ti"
+msgstr ""
+
+#: functions.php:1091
+msgid "Página"
+msgstr ""
+
+#: functions.php:1091
+msgid "de"
+msgstr ""
+
+#: functions.php:1092
+msgid "Primer"
+msgstr ""
+
+#: functions.php:1093
+msgid "Anterior"
+msgstr ""
+
+#: functions.php:1103
+msgid "Siguiente"
+msgstr ""
+
+#: functions.php:1104
+msgid "Último"
+msgstr ""
+
+#: functions.php:1257
+msgid "Cargando más posts..."
+msgstr ""
+
+#: functions.php:1258
+msgid "Lo sentimos, no hay más posts"
+msgstr ""
+
+#: header.php:186
+msgid "Destacados"
+msgstr ""
+
+#: header.php:189
+msgid "Últimos"
+msgstr ""
+
+#: header.php:192
+msgid "Popular"
+msgstr ""
+
+#: latest.php:99
+msgid "Más"
+msgstr ""
+
+#: search.php:9
+msgid "Buscar resultados para"
+msgstr ""
+
+#: search.php:63
+msgid "Lo sentimos, pero tu busqueda no ha encontrado ninguna entrada"
+msgstr ""
+
+#: searchform.php:2
+msgid "Pulsa buscar y presiona enter"
+msgstr ""
+
+#: widgets/widget-ad.php:19
+msgid "A widget that displays an ad of any size."
+msgstr ""
+
+#: widgets/widget-ad.php:25
+msgid "Flex Mag: Ad Widget"
+msgstr ""
+
+#: widgets/widget-catlist.php:19 widgets/widget-catrow.php:19
+msgid "A widget that displays a list of posts from a category of your choice."
+msgstr ""
+
+#: widgets/widget-catlist.php:25
+msgid "Flex Mag: Category List Widget"
+msgstr ""
+
+#: widgets/widget-catrow.php:25
+msgid "Flex Mag: Category Row Widget"
+msgstr ""
+
+#: widgets/widget-facebook.php:19
+msgid "A widget that displays a Facebook Like Box."
+msgstr ""
+
+#: widgets/widget-facebook.php:25
+msgid "Flex Mag: Facebook Widget"
+msgstr ""
+
+#: widgets/widget-gallery.php:19
+msgid ""
+"A widget that displays a scrolling gallery of images from posts of your "
+"choice."
+msgstr ""
+
+#: widgets/widget-gallery.php:25
+msgid "Flex Mag: Gallery Widget"
+msgstr ""
+
+#: widgets/widget-pop.php:19
+msgid ""
+"A widget that displays a list of popular posts within a time period of your "
+"choice."
+msgstr ""
+
+#: widgets/widget-pop.php:25
+msgid "Flex Mag: Popular Posts Widget"
+msgstr ""
+
+#: widgets/widget-tagfeat.php:19 widgets/widget-taglist.php:19
+#: widgets/widget-tagrow.php:19
+msgid "A widget that displays a list of posts from a tag of your choice."
+msgstr ""
+
+#: widgets/widget-tagfeat.php:25
+msgid "Flex Mag: Tag Featured Widget"
+msgstr ""
+
+#: widgets/widget-taglist.php:25
+msgid "Flex Mag: Tag List Widget"
+msgstr ""
+
+#: widgets/widget-tagrow.php:25
+msgid "Flex Mag: Tag Row Widget"
+msgstr ""
+
+#: widgets/widget-tags.php:19
+msgid "A custom Tag Cloud widget."
+msgstr ""
+
+#: widgets/widget-tags.php:25
+msgid "Flex Mag: Tag Cloud Widget"
+msgstr ""
