@@ -24,10 +24,10 @@ $('.last_posts-post').hover(function(){
 });
 
 $('.hover-opacity').hover(function(){
-	$(this).find('.hover-opacity-image').css({opacity:'0.5'}, 100)
+	$(this).find('.hover-opacity-image').css({opacity:'0.5'}, 100);
 	$('.featured-title', this).css({color: 'cornflowerblue'}, 100);
 }, function(){
-	$(this).find('.hover-opacity-image').css({opacity:'1'}, 100)
+	$(this).find('.hover-opacity-image').css({opacity:'1'}, 100);
 	$('.featured-title', this).css({color: 'white'}, 100);
 });
 
@@ -156,4 +156,4 @@ $(window).resize(function(){
 
 });
 
-})
+});

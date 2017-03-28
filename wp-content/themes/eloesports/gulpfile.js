@@ -55,7 +55,7 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('php', function(){
-  gulp.src([paths.php + '*.php', paths.phpTemplates + '/**/*.php'])
+  gulp.src(paths.php + '*.php')
     .pipe(browserSync.stream());
 });
 
@@ -100,10 +100,23 @@ gulp.task('watch', function () {
 gulp.task('browserSync-server', function () {
   browserSync.init({
     //host: '192.168.1.128:3000/eloesports',
-    proxy: serverUrl,
+    proxy: {
+      target: 'localhost/eloesports',
+    },
+    port: 3000,
+    ghost: false,
+    //startPath: '/eloesports',
+  });
+});
+
+gulp.task('browserSync-server_offline', function(){
+  browserSync.init({
+    online: false,
+    proxy: '127.0.0.98:80',
   });
 });
 
 gulp.task('default', ['scripts', 'watch', 'browserSync-server']);
 
+gulp.task('serve_offline', ['scripts', 'watch', 'browserSync-server_offline']);
 gulp.task('serve', ['scripts', 'watch', 'prefix', 'browserSync-server']);

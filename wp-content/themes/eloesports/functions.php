@@ -9,6 +9,32 @@ add_theme_support('post-thumbnails');
 
 add_image_size('my-size', 720, 388, true);
 
+// Register and Localize Script
+
+add_action('wp_enqueue_scripts', 'register_scripts');
+
+function register_scripts(){
+    // Recojo el script de dentro del tema de eloesports
+    wp_register_script('eloesports-script', get_stylesheet_directory_uri() . '/js/ajax_script.js', 'jquery', 1.0);
+}
+
+add_action('wp_enqueue_scripts', 'load_scripts');
+
+function load_scripts(){
+    wp_enqueue_script('eloesports-script');
+    $ajaxurl = admin_url('admin-ajax.php');
+    $phpvar = "Esto es una variable PHP que acabo de utilizar directamente desde Javascript con la opción de wp_enqueue_scripts";
+
+    wp_localize_script( 'eloesports-script', 'ajax_load_posts', array(
+        'expand'   => __( 'expand child menu', 'eloesports' ),
+        'collapse' => __( 'collapse child menu', 'eloesports' ),
+        'ajaxurl'  => $ajaxurl,
+        'phpvar' => $phpvar,
+        'noposts'  => esc_html__('No hay más articulos', 'eloesports'),
+        'loadmore' => esc_html__('Cargar más', 'eloesports')
+    ) );
+}
+
 
 // Menú Header
 
@@ -245,24 +271,69 @@ add_filter( 'wpp_custom_html', 'my_custom_popular_posts_html_list', 10, 2 );
 
 
 // AJAX FOR LOAD MORE POSTS
-/*
-$ajaxurl = '';
 
-if(in_array('sitepress-multilingual-cms/sitepress.php', get_option('active_plugins')) ){
-    $ajaxurl .= admin_url('admin-ajaxx.php?lang=' . ICL_LANGUAGE_CODE);
-} else{
-    $ajaxurl .= admin_url('admin-ajax.php');
+add_action('wp_ajax_nopriv_eloesports_more_post_ajax', 'eloesports_more_post_ajax');
+add_action('wp_ajax_eloesports_more_post_ajax', 'eloesports_more_post_ajax');
+
+if (!function_exists('eloesports_more_post_ajax')){
+    function eloesports_more_post_ajax(){
+        $ppp = (isset($_POST['ppp'])) ? $_POST['ppp'] : 3;
+        $offset = (isset($_POST['offset'])) ? $_POST['offset'] : 0;
+
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => $ppp,
+            //'cat' => $cat,
+            'offset' => $offset,
+        );
+
+        $loop = get_posts($args);
+
+        $out = '';
+
+        if($loop){ foreach ($loop as $post) : setup_postdata($post);
+
+            include TEMPLATEPATH . '/templates/category_filter.php';
+
+            // Article HTML construction
+
+            $permalink_article = "<article class='article'> <a href='". get_the_permalink($post) . "'>";
+
+            $article_info = "<div class='article-info'> <p class='last_posts-post-info-date'>" . get_the_date($post) . "</p>" . "<p class='last_posts-post-info-cat'>" . $category_name . "</p> </div>";
+
+            $post_title = get_the_title($post);
+
+            $article_content = "<div class='article-content'> <h3 class='article-content-title'>" . $post_title . "</h3> <div class='article-content-container'> <p class='article-content-container-description'>" . get_the_excerpt($post) . "</p> </div> </div>";
+
+            $author_name = get_the_author($post);
+
+            $article_author = "<div class='article-author'> <span>by</span><p>" . $author_name . "</p> </div>";
+
+            //$postID = get_the_id($post);
+            
+            if( has_post_thumbnail($post)){
+                $thumbnail_img = get_the_post_thumbnail($post, 'my-size');
+                $thumbnail_string = "<figure class='article-thumb'>" . $thumbnail_img . "</figure>";
+            }
+
+                // Asignar la construcción del articulo en la variable out
+
+            $out .= $permalink_article;
+            $out .= "<div class='blur-bottom'></div>";
+            $out .= $article_info;
+            $out .= $thumbnail_string;
+            $out .= $article_content;
+            $out .= $article_author;
+            //$out .= $stats;
+            //$out .= $excerpt;
+            $out .= "</a></article>" . "\n";
+
+            endforeach;
+            wp_reset_postdata();
+        }
+
+        wp_die($out);
+    }
 }
-
-wp_localize_script('eloesports-script', 'screenReaderText', array(
-    'expand' => __('expand child menu', 'eloesports'),
-    'collapse' => __('collapse child menu', 'eloesports'),
-    'ajaxurl' => $ajaxurl,
-    'noposts' =>
-    ) );
-
-
-*/
-
 
 ?>

@@ -23,7 +23,7 @@
 		<div class="article-content">
 			<h3 class="article-content-title"><?php the_title(); ?></h3>
 			<div class="article-content-container">
-				<p class="article-content-container-description"><?php echo rwmb_meta('rw_frased'); ?></p>
+				<p class="article-content-container-description"><?php the_excerpt(); ?></p>
 			</div>
 		</div>
 		<div class="article-author">

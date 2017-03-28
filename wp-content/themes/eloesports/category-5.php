@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); $cat_id = get_query_var('cat'); ?>
 
 <main class="container">
 	<div class="click-block"></div>
@@ -30,7 +30,7 @@
 		</section>
 		<section class="last-articles">
 			<h2 class="last-articles-title section-title">Últimos Posts</h2>
-			<div class="article-wrapper">
+			<div class="article-wrapper ajax_posts">
 				<?php
 					$last_posts = get_posts(array(
 						'order' => 'desc',
@@ -42,6 +42,7 @@
 				<?php include TEMPLATEPATH . '/templates/theloop.php'?>
 				<?php endforeach; wp_reset_postdata(); }?>
 			</div>
+			<div id="more_posts" data-category="<?php echo esc_attr($cat_id); ?>"><?php esc_html_e('Ver Más', 'eloesports') ?></div>
 		</section>
 	</div>
 

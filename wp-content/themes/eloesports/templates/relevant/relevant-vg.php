@@ -3,8 +3,9 @@
 		<?php
 			$latests_posts = get_posts( array(
 				'numberposts' => 1,
-				'order' => 'Asc',
-				'category' => 7,
+				'order' => 'Desc',
+				'tag' => 'destacado',
+				'category' => 4,
 				)
 			);
 
@@ -35,9 +36,10 @@
 		<?php 
 			$latests_posts = get_posts( array(
 				'numberposts' => 2,
-				'order' => 'Asc',
 				'offset' => 1,
-				'category' => 7,
+				'order' => 'Desc',
+				'category' => 4,
+				'tag' => 'destacado',
 				)
 			);
 
