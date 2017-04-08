@@ -53,7 +53,7 @@ function load_ajax_posts() {
 			dataType: 'html',
 			url: ajax_load_posts.ajaxurl,
 			data: {
-				//'cat': cat,
+				'cat': cat,
 				'ppp': ppp,
 				'offset': offset,
 				'action': 'eloesports_more_post_ajax',

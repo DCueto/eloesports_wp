@@ -6,7 +6,7 @@
 		<a href="<?php the_permalink(); ?>">
 		<div class="blur-bottom"></div>
 		<div class="article-info">
-			<p class="last_posts-post-info-date"><?php the_date(); ?></p>
+			<p class="last_posts-post-info-date"><?php echo get_the_date(); ?></p>
 			<p class="last_posts-post-info-cat"><?php echo $category_name; ?></p>
 		</div>
 		<?php if ( has_post_thumbnail() ) { ?>

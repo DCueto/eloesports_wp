@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php bloginfo(title); ?></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="wp-content/themes/eloesports/js/app.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700" rel="stylesheet">
@@ -23,7 +23,7 @@
 		<div class="nav-mobile-container">
 			<div class="nav-mobile-container-social">
 				<ul>
-					<li><a href="http://eloesports.com">Home</a></li>
+					<li><a href="<?php echo get_home_url(); ?>">Home</a></li>
 				</ul>
 			</div>
 		</div>
@@ -36,6 +36,7 @@
 			<div class="nav-mobile-container-social">
 				<ul>
 					<li><a href="http://twitter.com/eloesports">Twitter</a></li>
+					<li><a href="http://facebook.com/eloesports">Facebook</a></li>
 					<li><a href="http://twitch.tv/eloesports">Twitch</a></li>
 					<li><a href="http://youtube.com/DCueto">Youtube</a></li>
 				</ul>
@@ -44,7 +45,7 @@
 	</div>
 	<div class="wrap-header">
 		<div class="logo">
-			<a href="http://eloesports.com">
+			<a href="<?php echo get_home_url(); ?>">
 			<figure>
 				<?php if(function_exists('the_custom_logo')){
 					$custom_logo_id = get_theme_mod('custom_logo');
@@ -68,7 +69,7 @@
 	
 		<div class="social">
 			<a href="https://twitter.com/eloesports"><span class="icon-twitter social-icon"></span></a>
-			<!-- <span class="icon-facebook"></span> -->
+			<a href="https://facebook.com/eloesports"><span class="icon-facebook social-icon"></span></a>
 			<a href="https://www.twitch.tv/eloesports"><span class="icon-twitch social-icon"></span></a>
 			<a href=""><span class="icon-youtube-play social-icon"></span></a>
 		</div>

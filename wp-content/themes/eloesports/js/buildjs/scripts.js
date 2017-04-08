@@ -53,7 +53,7 @@ function load_ajax_posts() {
 			dataType: 'html',
 			url: ajax_load_posts.ajaxurl,
 			data: {
-				//'cat': cat,
+				'cat': cat,
 				'ppp': ppp,
 				'offset': offset,
 				'action': 'eloesports_more_post_ajax',
@@ -88,25 +88,61 @@ $(document).ready(function(){
 
 // Animación hover sobre articulos
 
-$('.article').hover(function(){
+// Articulos
+$('body').on('mouseenter', '.article', function(e){
 	$(this).css({'border': '1px solid cornflowerblue'});
+	$('.play-icon', this).css({'color': 'cornflowerblue'});
 	$('.article-content-title', this).css({color: '#144794'});
 	$('.article-author p', this).css({color: '#144794'});
-}, function(){
+});
+
+$('body').on('mouseleave', '.article', function(e){
 	$(this).css({'border': '1px solid lightgrey'});
+	$('.play-icon', this).css({'color': 'white'});
 	$('.article-content-title', this).css({color: 'black'});
 	$('.article-author p', this).css({color: '#4d4d4d'});
 });
 
+// Lista de videos
+
+$('.video_list').on('mouseenter', '.video_listed', function(e){
+	$(this).css({'background-color': 'rgb(62, 62, 62)'});
+	//$(this).css({'border': '2px solid cornflowerblue'});
+	//$('p', this).css({'color': 'cornflowerblue'});
+});
+
+$('.video_list').on('mouseleave', '.video_listed', function(e){
+	$(this).css({'background-color': '#252525'});
+	//$(this).css({'border': '0px solid lightgrey'});
+	//$('.video_listed-content-info', this).find('p').css({'color': 'lightgrey'});
+	//$('.video_listed-content-title', this).css({'color': 'lightgrey'});
+});
+
+
+// Show & hide scrollbar last_post in Single.php
+
+var parent = $('.scroll-container');
+var child = $('.scroll-container2');
+var paddingRight = child.offsetWidth - child.clientWidth + "px";
+child.css({'padding-right': paddingRight});
+
 // Animación hover sobre articulos en single.php sidebar
-$('.last_posts-post').hover(function(){
+$('.last_posts').on('mouseenter', '.last_posts-post', function(e){
 	$(this).css({'border': '2px solid cornflowerblue'});
+	$('.last_posts-post').css({'width': 'auto'});
 	$('p', this).css({'color': 'cornflowerblue'});
-}, function(){
+	$(this).parent('.scroll-container2').css({'padding-right': '0'});
+});
+
+$('.last_posts').on('mouseleave', '.last_posts-post', function(e){
 	$(this).css({'border': '0px solid lightgrey', 'border-bottom': '1px solid lightgrey'});
+	$('.last_posts-post').css({'width': '98%'});
 	$('p', this).css({'color': '#4d4d4d'});
 	$('.last_posts-post-title', this).css({'color': 'black'});
+	$(this).parent().css('padding-right', '17px');
 });
+
+// Animación en el slider de Relevantes
 
 $('.hover-opacity').hover(function(){
 	$(this).find('.hover-opacity-image').css({opacity:'0.5'}, 100);

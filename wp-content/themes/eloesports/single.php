@@ -53,7 +53,7 @@
 						<p><?php //echo $category_name; ?></p>
 					</div>
 					<div class="single-article-description">
-						<p><?php echo rwmb_meta('rw_frased'); ?></p>
+						<!--<p><?php //echo rwmb_meta('rw_frased'); ?></p>-->
 					</div>
 					<div class="single-article-content">
 						<?php the_content(); ?>
@@ -72,6 +72,7 @@
 				<div class="last_posts-container">
 					<h3 class="last_posts-title">Últimos Posts</h3>
 					<div class="scroll-container">
+					<div class="scroll-container2">
 					<?php
 					$last_posts = get_posts(array(
 						//'order' => 'Desc',
@@ -84,7 +85,7 @@
 					<article class="last_posts-post">
 						<a href="<?php the_permalink(); ?>">
 						<div class="last_posts-post-info">
-							<p class="last_posts-post-info-date"><?php the_date(); ?></p>
+							<p class="last_posts-post-info-date"><?php echo get_the_date(); ?></p>
 							<p class="last_posts-post-info-cat"><?php echo $category_name; ?></p>
 						</div>
 						<p class="last_posts-post-title"><?php the_title(); ?></p>
@@ -96,36 +97,13 @@
 					}
 					?>
 					</div>
+					</div>
 				</div>
 			</section>
 		</section>
 	</div>
 </main>
-<footer class="footer-single">
-	<div class="copyright">
-	<p>Copyright © 2017 Eloesports. Todos los derechos reservados</p>
-	<div class="logo_footer">
-		<a href="http://localhost/eloesports">
-		<figure>
-			<?php if(function_exists('the_custom_logo')){
-				$custom_logo_id = get_theme_mod('custom_logo');
-				$logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-				if (has_custom_logo()) {
-					echo '<img src="'.esc_url($logo[0]).'">';
-				} else {
-					echo 'NO LOGO';
-				}
-				} 
-			?>
-			<!-- <img src="" alt=""> -->
-		</figure>
-		<p class="logo_footer-title">LOESPORTS</p>
-		</a>
-	</div>
-	</div>
-</footer>
 
-
-<?php wp_footer(); ?>
+<?php get_footer('nostyle'); ?>
 </body>
 </html>

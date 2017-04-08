@@ -47,14 +47,14 @@ if(comments_open()){
 <div class="comments-wrap">
 
 <?php
-/*
+
 $args = array(
     'status' => 'approve'
 );
  
 // The comment Query
 $comments_query = new WP_Comment_Query;
-$comments = $comments_query->query( $args ); */
+$comments = $comments_query->query( $args );
  
 // Comment Loop
 if ( $comments ) {

@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', 'register_scripts');
 
 function register_scripts(){
     // Recojo el script de dentro del tema de eloesports
-    wp_register_script('eloesports-script', get_stylesheet_directory_uri() . '/js/ajax_script.js', 'jquery', 1.0);
+    wp_register_script('eloesports-script', get_stylesheet_directory_uri() . '/js/ajax_script.js', 'jquery', 1.2);
 }
 
 add_action('wp_enqueue_scripts', 'load_scripts');
@@ -57,6 +57,9 @@ function elo_custom_logo_setup(){
 add_action('after_setup_theme', 'elo_custom_logo_setup');
 
 
+// Post Formats
+
+add_theme_support('post-formats', array('video',));
 
 // METABOX FRASE
 
@@ -237,8 +240,7 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
 
         $author_query = get_user_by('ID', $popular->uid);
 
-        $author_name = $author_query->display_name
-;
+        $author_name = $author_query->display_name;
         $article_author = "<div class='article-author'> <span>by</span><p>" . $author_name . "</p> </div>";
 
         //$test = var_dump($popular);
@@ -263,7 +265,6 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
     return $output;
 }
 
-
 add_filter( 'wpp_custom_html', 'my_custom_popular_posts_html_list', 10, 2 );
 
 
@@ -278,27 +279,35 @@ add_action('wp_ajax_eloesports_more_post_ajax', 'eloesports_more_post_ajax');
 if (!function_exists('eloesports_more_post_ajax')){
     function eloesports_more_post_ajax(){
         $ppp = (isset($_POST['ppp'])) ? $_POST['ppp'] : 3;
+        $cat = (isset($_POST['cat'])) ? $_POST['cat'] : 0;
         $offset = (isset($_POST['offset'])) ? $_POST['offset'] : 0;
 
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => $ppp,
-            //'cat' => $cat,
+            'cat' => $cat,
+            'category__not_in' => array(11,),
             'offset' => $offset,
+            'order' => 'desc',
         );
 
-        $loop = get_posts($args);
+        //$loop = get_posts($args);
+
+        $loop = new WP_Query($args);
 
         $out = '';
 
-        if($loop){ foreach ($loop as $post) : setup_postdata($post);
+        if($loop->have_posts()){ while($loop->have_posts()){
+
+            $loop->the_post();
 
             include TEMPLATEPATH . '/templates/category_filter.php';
 
-            // Article HTML construction
+            // Article HTML construction1112
 
             $permalink_article = "<article class='article'> <a href='". get_the_permalink($post) . "'>";
 
+            $post_date = get_the_date($post);
             $article_info = "<div class='article-info'> <p class='last_posts-post-info-date'>" . get_the_date($post) . "</p>" . "<p class='last_posts-post-info-cat'>" . $category_name . "</p> </div>";
 
             $post_title = get_the_title($post);
@@ -307,28 +316,57 @@ if (!function_exists('eloesports_more_post_ajax')){
 
             $author_name = get_the_author($post);
 
-            $article_author = "<div class='article-author'> <span>by</span><p>" . $author_name . "</p> </div>";
+            $article_author = "<div class='article-author'> <span>by</span><p>" . $author_name . "</p></div>";
 
             //$postID = get_the_id($post);
             
             if( has_post_thumbnail($post)){
                 $thumbnail_img = get_the_post_thumbnail($post, 'my-size');
                 $thumbnail_string = "<figure class='article-thumb'>" . $thumbnail_img . "</figure>";
+                if (has_post_format('video', $post)){
+                    $thumbnail_string = "<figure class='article-thumb'>" . $thumbnail_img . "<span class='icon-play play-icon'></span></figure>";
+                }
             }
 
-                // Asignar la construcción del articulo en la variable out
+            if($loop->current_post == 2) {
+                
+                // PUBLICIDAD
+                /*
+                $permalink_article = "<article class='article'> <a href='http://google.com'>";
+                $article_info = "<div class='article-info'><p class='last_posts-post-info-cat'> PUBLICIDAD </p> </div>";
+                //$dump = var_dump($loop->current_post);
+                $article_content = "<div class='article-content'> <h3 class='article-content-title'>" . $dump . "</h3> </div>";
+                    // Asignar la construcción del articulo en la variable out
+                $out .= $permalink_article;
+                $out .= $article_info;
+                $out .= $article_content;
+                $out .= "</a></article>" . "\n"; */
 
-            $out .= $permalink_article;
-            $out .= "<div class='blur-bottom'></div>";
-            $out .= $article_info;
-            $out .= $thumbnail_string;
-            $out .= $article_content;
-            $out .= $article_author;
-            //$out .= $stats;
-            //$out .= $excerpt;
-            $out .= "</a></article>" . "\n";
+                // NO PUBLICIDAD
 
-            endforeach;
+                $out .= $permalink_article;
+                $out .= "<div class='blur-bottom'></div>";
+                $out .= $article_info;
+                $out .= $thumbnail_string;
+                $out .= $article_content;
+                $out .= $article_author;
+                $out .= "</a></article>" . "\n";
+                
+            } else{
+
+                    // Asignar la construcción del articulo en la variable out
+                $out .= $permalink_article;
+                $out .= "<div class='blur-bottom'></div>";
+                $out .= $article_info;
+                $out .= $thumbnail_string;
+                $out .= $article_content;
+                $out .= $article_author;
+                $out .= "</a></article>" . "\n";
+            }
+
+
+
+            }
             wp_reset_postdata();
         }
 
