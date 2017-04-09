@@ -26,7 +26,7 @@
 			</div>
 		</section>
 		<section class="last-articles">
-			<h2 class="last-articles-title section-title">Últimos Posts</h2>
+			<h2 class="last-articles-title section-title">Últimos Artículos</h2>
 			<div class="article-wrapper ajax_posts" id="last_posts">
 				<?php
 					$last_posts = get_posts(array(

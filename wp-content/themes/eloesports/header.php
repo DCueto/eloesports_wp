@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-9865956683383182",
+	    enable_page_level_ads: true
+	  });
+	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php bloginfo(title); ?></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -46,8 +53,8 @@
 	<div class="wrap-header">
 		<div class="logo">
 			<a href="<?php echo get_home_url(); ?>">
-			<figure>
-				<?php if(function_exists('the_custom_logo')){
+			<figure class="logo-container">
+				<!-- <?php /*if(function_exists('the_custom_logo')){
 					$custom_logo_id = get_theme_mod('custom_logo');
 					$logo = wp_get_attachment_image_src($custom_logo_id, 'full');
 					if (has_custom_logo()) {
@@ -55,11 +62,10 @@
 					} else {
 						echo 'NO LOGO';
 					}
-					} 
-				?>
-				<!-- <img src="" alt=""> -->
+					} */
+				?> -->
+				<img class="logo-container-image" src="<?php echo get_stylesheet_directory_uri()?>/img/logo_elo_text.png" alt="">
 			</figure>
-			<p class="logo-title">LOESPORTS</p>
 			<canvas>
 			
 			</canvas>

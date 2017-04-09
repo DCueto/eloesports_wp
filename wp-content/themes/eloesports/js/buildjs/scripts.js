@@ -3,7 +3,7 @@ $(function(){
 var $content = $('.ajax_posts');
 var $loader = $('#more_posts');
 var cat = $loader.data('category');
-var ppp = 3;
+var ppp = 8;
 var offset = $('#last_posts').find('.article').length;
 
 $loader.on('click', load_ajax_posts);

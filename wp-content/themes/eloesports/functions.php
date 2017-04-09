@@ -1,5 +1,8 @@
 <?php 	
 
+define('FORCE_SSL_LOGIN', true);
+define('FORCE_SSL_ADMIN', true);
+
 define('TEMPPATH', get_bloginfo('stylesheet_directory'));
 define('IMAGES', TEMPPATH. "/img");
 
@@ -15,7 +18,7 @@ add_action('wp_enqueue_scripts', 'register_scripts');
 
 function register_scripts(){
     // Recojo el script de dentro del tema de eloesports
-    wp_register_script('eloesports-script', get_stylesheet_directory_uri() . '/js/ajax_script.js', 'jquery', 1.2);
+    wp_register_script('eloesports-script', get_stylesheet_directory_uri() . '/js/ajax_script.js', 'jquery', 1.3);
 }
 
 add_action('wp_enqueue_scripts', 'load_scripts');
@@ -278,7 +281,7 @@ add_action('wp_ajax_eloesports_more_post_ajax', 'eloesports_more_post_ajax');
 
 if (!function_exists('eloesports_more_post_ajax')){
     function eloesports_more_post_ajax(){
-        $ppp = (isset($_POST['ppp'])) ? $_POST['ppp'] : 3;
+        $ppp = (isset($_POST['ppp'])) ? $_POST['ppp'] : 8;
         $cat = (isset($_POST['cat'])) ? $_POST['cat'] : 0;
         $offset = (isset($_POST['offset'])) ? $_POST['offset'] : 0;
 
