@@ -101,7 +101,7 @@ gulp.task('browserSync-server', function () {
   browserSync.init({
     //host: '192.168.1.128:3000/eloesports',
     proxy: {
-      target: 'localhost/eloesports',
+      target: 'localhost',
     },
     port: 3000,
     ghost: false,

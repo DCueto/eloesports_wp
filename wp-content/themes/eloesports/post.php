@@ -28,7 +28,7 @@
 			</div>
 		</div>
 		<div class="article-author">
-			<span>by</span><p><?php the_author(); ?></p>
+			<span>por</span><p><?php the_author(); ?></p>
 		</div>
 		</a>
 	</article>

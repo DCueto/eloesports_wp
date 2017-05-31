@@ -17,7 +17,7 @@
 						'offset' => 3,
 						//'post_per_page' => 6,
 						'category' => 4,
-						//'numberposts' => 6,
+						'numberposts' => 6,
 						'order' => 'desc',
 						);
 					$relevant_posts = get_posts($args_rp);

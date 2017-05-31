@@ -244,7 +244,7 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
         $author_query = get_user_by('ID', $popular->uid);
 
         $author_name = $author_query->display_name;
-        $article_author = "<div class='article-author'> <span>by</span><p>" . $author_name . "</p> </div>";
+        $article_author = "<div class='article-author'> <span>por</span><p>" . $author_name . "</p> </div>";
 
         //$test = var_dump($popular);
 
@@ -319,7 +319,7 @@ if (!function_exists('eloesports_more_post_ajax')){
 
             $author_name = get_the_author($post);
 
-            $article_author = "<div class='article-author'> <span>by</span><p>" . $author_name . "</p></div>";
+            $article_author = "<div class='article-author'> <span>por</span><p>" . $author_name . "</p></div>";
 
             //$postID = get_the_id($post);
             

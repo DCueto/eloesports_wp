@@ -4,8 +4,10 @@
 	<div class="click-block"></div>
 	<?php rewind_posts(); ?>
 
-	<?php include TEMPLATEPATH . '/templates/relevant.php' ?>
 	<div class="wrap">
+
+		<?php include TEMPLATEPATH . '/templates/relevant.php' ?>
+
 		<section class="featured-articles">
 			<h2 class="featured-articles-title section-title">Relevantes</h2>
 			<div class="article-wrapper">
@@ -16,7 +18,7 @@
 						'cat' => -11,
 						//'post_per_page' => 6,
 						//'category' => 4,
-						//'numberposts' => 6,
+						'numberposts' => 6,
 						'order' => 'desc',
 						);
 					$relevant_posts = get_posts($args_rp);
@@ -29,7 +31,7 @@
 		<!-- <?php //get_template_part('templates/videos'); ?> -->
 
 		<section class="last-articles">
-			<h2 class="last-articles-title section-title">Últimos Artículos</h2>
+			<h2 class="last-articles-title section-title">Últimos Posts</h2>
 			<div class="article-wrapper ajax_posts" id="last_posts">
 				<?php
 					$last_posts = get_posts(array(

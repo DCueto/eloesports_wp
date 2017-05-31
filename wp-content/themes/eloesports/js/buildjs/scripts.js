@@ -155,7 +155,8 @@ $('.hover-opacity').hover(function(){
 
 // CLICK NAV MOBILE
 
-$('.header-left').click(function() {
+$('.menu-icon').click(function(event) {
+	event.preventDefault();
 	if($('.nav-mobile').hasClass('nav-mobile-off')){
 		$('.nav-mobile').addClass('nav-mobile-on');
 		$('.click-block').css({display: 'block'});
@@ -163,7 +164,8 @@ $('.header-left').click(function() {
 		$('.click-block').animate({left: '0'}, 200, function() {});
 		$('.nav-mobile').removeClass('nav-mobile-off');
 
-		$('.container').click(function() {
+		$('.container').click(function(event) {
+			event.preventDefault();
 			$('.nav-mobile').animate({left: '-100%'}, 200, function() {});
 			$('.click-block').animate({left: '-100%'}, 200, function() {});
 			$('.click-block').css({display: 'none'});
@@ -178,8 +180,6 @@ $('.header-left').click(function() {
 		$('.nav-mobile').removeClass('nav-mobile-on');
 	}
 });
-
-
 
 $(window).scroll(function() {
 	//$('.main-header').css({opacity: '0.98'});
